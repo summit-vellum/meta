@@ -1,0 +1,26 @@
+{
+    "name": "quill/meta",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Quill\\Meta\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quill\\Meta\\MetaServiceProvider"
+            ]
+        }
+    }
+}
