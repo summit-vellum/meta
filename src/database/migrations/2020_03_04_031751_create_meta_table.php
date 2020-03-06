@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -25,6 +25,8 @@ class CreateMetaTable extends Migration
             $table->string('canonical', 255)->nullable();
             $table->timestamps();
             $table->softDeletes();
+
+            $table->index(['slug']);
         });
     }
 
