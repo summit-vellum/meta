@@ -21,7 +21,7 @@ class CreateMetaTable extends Migration
             $table->text('description');
             $table->tinyInteger('status')->default(1);
             $table->string('post_type', 255);
-            $table->tinyInteger('post_id');
+            $table->integer('post_id');
             $table->string('canonical', 255)->nullable();
             $table->timestamps();
             $table->softDeletes();
